@@ -21,6 +21,6 @@ app.use(express.json());
 
 
 app.listen(PORT, () => {
-	console.log("Running on: boop" + PORT);
+	console.log("Running on:" + PORT);
 	console.log("URL: " + BACKEND_URL);
 });
