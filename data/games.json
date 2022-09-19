@@ -1,26 +1,58 @@
 [
     {
-    "gameId": "1841b64e-1f0d-4c61-96a8-4084a45eb20c",
-    "gameName": "Catan", 
-    "gameDescription":"description description description", 
-    "gameDuration": "45-90", 
-    "gamePlayers": "3-4",
-    "image":"https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1629324722072.jpg",
-    "gameCategory": "mavSOM8vjH",
-    "OwnerId":"aae16546-dacb-497f-af58-1474af620c93",
-    "gameReviews": [
-        {
-            "commentId":"4dc47ae3-75eb-47f9-918b-371c81321e6c",
-            "commentName": "Todd",
-            "commentText": "this is a pretty good game",
-            "commentDate:": "1663538738"
-        },
-        {
-            "commentId":"c2fcba91-fcd4-46ee-92c9-708ae0e5b610",
-            "commentName": "Sam",
-            "commentText": "this is a pretty a really long comment it goes something like this, it's very long beep boop beep boop it's really long",
-            "commentDate:": "1663538738"
-        }
-        
-    ],
-    }]
+        "gameId": "1841b64e-1f0d-4c61-96a8-4084a45eb20c",
+        "gameName": "Catan",
+        "gameDescription": "description description description",
+        "gameDuration": "45-90",
+        "gameMaxPlayers": "6",
+        "gameMinPlayers": "4",
+        "image": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1629324722072.jpg",
+        "gameCategory": "mavSOM8vjH",
+        "OwnerId": "aae16546-dacb-497f-af58-1474af620c93",
+        "renterId":  "0410dfa5-96f7-4b44-ad0b-de164671d091",
+        "gameAvailability": "AVAILABLE",
+        "gameCondition": "GOOD",
+        "gameReviews": [
+            {
+                "commentId": "4dc47ae3-75eb-47f9-918b-371c81321e6c",
+                "commentName": "Todd",
+                "commentText": "this is a pretty good game",
+                "commentDate:": "1663538738"
+            },
+            {
+                "commentId": "c2fcba91-fcd4-46ee-92c9-708ae0e5b610",
+                "commentName": "Sam",
+                "commentText": "this is a pretty a really long comment it goes something like this, it's very long beep boop beep boop it's really long",
+                "commentDate:": "1663538738"
+            }
+        ]
+    },
+    {
+        "gameId": "cde706ae-fd19-4b0a-a512-9a048e709c80",
+        "gameName": "Catan",
+        "gameDescription": "description description description",
+        "gameDuration": "45-90",
+        "renterId":  "0410dfa5-96f7-4b44-ad0b-de164671d091",
+        "gameMaxPlayers": "6",
+        "gameMinPlayers": "4",
+        "image": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1629324722072.jpg",
+        "gameCategory": "mavSOM8vjH",
+        "OwnerId": "b4c83f5a-54ad-4610-8f43-c9d1cf8f4509",
+        "gameAvailability": "AVAILABLE",
+        "gameCondition": "GOOD",
+        "gameReviews": [
+            {
+                "commentId": "78efe7e2-7759-48fb-8ecb-c9df52f0bf0f",
+                "commentName": "Matthew",
+                "commentText": "this is a pretty ok game",
+                "commentDate:": "1663538738"
+            },
+            {
+                "commentId": "d92ff3d1-864b-42ee-977c-fad47de2505a",
+                "commentName": "Steve",
+                "commentText": "this is a pretty a really long comment it goes something like this, it's very long beep boop beep boop it's really long",
+                "commentDate:": "1663538738"
+            }
+        ]
+    }
+]
