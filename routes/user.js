@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const gamesController = require("../controllers/gamesController");
+const userController = require("../controllers/userController");
 
 //Inventory list endpoint
 // router
@@ -9,18 +9,8 @@ const gamesController = require("../controllers/gamesController");
 
 router
     .route("/:id")
-    .get(gamesController.singleGame)
-
-
-router
-    .route("/new")
-    .post(gamesController.newGame)
-
-router
-    .route("/comment/:id")
-    .post(gamesController.newComment)
-
-
+    .get(userController.singleUserProfile)
+    
 
 //Inventory detail endpoint
 // router

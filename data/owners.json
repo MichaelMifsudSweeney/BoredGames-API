@@ -1,7 +1,7 @@
 [
     {
-        "OwnerId": "aae16546-dacb-497f-af58-1474af620c93",
-        "OwnerName": "Steve Holt",
+        "ownerId": "aae16546-dacb-497f-af58-1474af620c93",
+        "ownerName": "Steve Holt",
         "ownerReviews": [
             {
                 "commentId": "8b369f36-4a15-45c1-b3b9-dd7826b0b194",
@@ -18,8 +18,8 @@
         ]
     },
     {
-        "OwnerId": "aa8b0a51-88de-4bea-b6f4-ae2a8d58baf3",
-        "OwnerName": "Gob Bluth",
+        "ownerId": "b4c83f5a-54ad-4610-8f43-c9d1cf8f4509",
+        "ownerName": "Gob Bluth",
         "ownerReviews": [
             {
                 "commentId": "81980815-fae1-4830-8eca-f3bbfa819d4c",

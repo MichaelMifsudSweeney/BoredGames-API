@@ -6,4 +6,8 @@ const fetchGameData = () => {
   return gameList;
 };
 
-module.exports = { fetchGameData };
+const writeGameData = (data) => {
+    fs.writeFileSync("./data/games.json", JSON.stringify(data));
+  };
+
+module.exports = { fetchGameData, writeGameData };

@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const gamesRoute = require("./routes/games");
+const userRoute = require("./routes/user");
 // const warehouseRoute = require("./routes/warehouse");
 require("dotenv").config();
 const { PORT, BACKEND_URL } = process.env;
@@ -14,6 +15,8 @@ app.use(express.json());
 
 // //Inventory route
 app.use("/games", gamesRoute);
+
+app.use("/user", userRoute);
 
 // //Warehouse route
 // app.use("/", warehouseRoute);
