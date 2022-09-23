@@ -3,9 +3,9 @@ const router = express.Router();
 const gamesController = require("../controllers/gamesController");
 
 //Inventory list endpoint
-// router
-//     .route("/")
-//     .get(gamesController.gamesList)
+router
+    .route("/")
+    .get(gamesController.gamesList)
 
 router
     .route("/:id")
