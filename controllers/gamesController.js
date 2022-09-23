@@ -26,6 +26,32 @@ const singleGame = (req, res) => {
     });
 };
 
+const reserveGame = (req, res) => {
+    // console.log("reserveGame is fired")
+    let gamesData = gamesModel.fetchGameData();
+    let selectedGame = gamesData.find((game) => game.gameId === req.body.gameId)
+    
+    selectedGame.gameAvailability = 'RENTED'
+    selectedGame.renterId = req.body.gameId
+    let allOtherGames = gamesData.filter((game) => game.gameId !== req.body.gameId)
+    allOtherGames.push(selectedGame)
+    // console.log(allOtherGames)
+    
+
+
+    // let ownersData = ownersModel.fetchOwnersData();
+    
+    
+    // let ownerProfile = ownersData.find((owner) => selectedGame.ownerId === owner.ownerId)
+    // let gameAndOwnerData = Object.assign(selectedGame, ownerProfile)
+
+    // console.log(gameAndOwnerData)
+    res.status(200).json({
+        status: "OK"
+        // results: gameAndOwnerData
+    });
+};
+
 const newGame = (req, res) => {
     // let gamesData = gamesModel.fetchGameData();
     let newGameData = req.body
@@ -77,5 +103,6 @@ module.exports = {
     gamesList,
     singleGame,
     newGame,
-    newComment
+    newComment,
+    reserveGame
 };

@@ -11,6 +11,10 @@ router
     .route("/:id")
     .get(gamesController.singleGame)
 
+router
+    .route("/reserve")
+    .post(gamesController.reserveGame)
+
 
 router
     .route("/new")
