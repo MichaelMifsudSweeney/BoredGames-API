@@ -10,6 +10,7 @@ router
 router
     .route("/:id")
     .get(gamesController.singleGame)
+    .delete(gamesController.deleteGame)
 
 router
     .route("/reserve")
@@ -23,6 +24,7 @@ router
 router
     .route("/comment/:id")
     .post(gamesController.newComment)
+
 
 
 

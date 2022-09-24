@@ -7,7 +7,7 @@ const singleUserProfile = (req, res) => {
     // console.log("gamesData", gamesData)
     let gamesOwned = gamesData.filter(game => game.ownerId === req.params.id)
     let gamesRented = gamesData.filter(game => game.renterId === req.params.id)
-    console.log(req.params.id)
+    // console.log(req.params.id)
     res.status(200).json({
         status: "OK",
         gamesOwned: gamesOwned,
