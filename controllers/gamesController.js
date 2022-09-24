@@ -3,12 +3,12 @@ const ownersModel = require("../models/ownersModel");
 const { v4: uuidv4 } = require("uuid");
 const Jabber = require('jabber');
 const jabber = new Jabber();
-const gamesList = (req, res) => {
+const gamesList = (_req, res) => {
     let gamesData = gamesModel.fetchGameData();
-    console.log("gamesData", gamesData)
+    let filteredGamesData = gamesData.filter((game) => game.gameAvailability === "AVAILABLE")
     res.status(200).json({
         status: "OK",
-        results: gamesData
+        results: filteredGamesData
     });
 };
 
