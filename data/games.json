@@ -1,61 +1,5 @@
 [
     {
-        "gameId": "1841b64e-1f0d-4c61-96a8-4084a45eb20c",
-        "gameName": "Catan",
-        "gameDescription": "description description description",
-        "gameDuration": "45-90",
-        "gameMaxPlayers": "6",
-        "gameMinPlayers": "4",
-        "image": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1629324722072.jpg",
-        "gameCategory": "mavSOM8vjH",
-        "ownerId": "aae16546-dacb-497f-af58-1474af620c93",
-        "renterId": "0410dfa5-96f7-4b44-ad0b-de164671d091",
-        "gameAvailability": "AVAILABLE",
-        "gameCondition": "GOOD",
-        "gameReviews": [
-            {
-                "commentId": "4dc47ae3-75eb-47f9-918b-371c81321e6c",
-                "commentName": "Todd",
-                "commentText": "this is a pretty good game",
-                "commentDate:": "1663538738"
-            },
-            {
-                "commentId": "c2fcba91-fcd4-46ee-92c9-708ae0e5b610",
-                "commentName": "Sam",
-                "commentText": "this is a pretty a really long comment it goes something like this, it's very long beep boop beep boop it's really long",
-                "commentDate:": "1663538738"
-            }
-        ]
-    },
-    {
-        "gameId": "cde706ae-fd19-4b0a-a512-9a048e709c80",
-        "gameName": "Catan",
-        "gameDescription": "description description description",
-        "gameDuration": "45-90",
-        "renterId": "aae16546-dacb-497f-af58-1474af620c93",
-        "gameMaxPlayers": "6",
-        "gameMinPlayers": "4",
-        "image": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1629324722072.jpg",
-        "gameCategory": "mavSOM8vjH",
-        "ownerId": "b4c83f5a-54ad-4610-8f43-c9d1cf8f4509",
-        "gameAvailability": "AVAILABLE",
-        "gameCondition": "GOOD",
-        "gameReviews": [
-            {
-                "commentId": "78efe7e2-7759-48fb-8ecb-c9df52f0bf0f",
-                "commentName": "Matthew",
-                "commentText": "this is a pretty ok game",
-                "commentDate:": "1663538738"
-            },
-            {
-                "commentId": "d92ff3d1-864b-42ee-977c-fad47de2505a",
-                "commentName": "Steve",
-                "commentText": "this is a pretty a really long comment it goes something like this, it's very long beep boop beep boop it's really long",
-                "commentDate:": "1663538738"
-            }
-        ]
-    },
-    {
         "gameId": "19656260-8e32-499c-bfec-bfb395fe2fef",
         "gameName": "Munchkin",
         "gameDescription": "<p>Go down in the dungeon. Kill everything you meet.<br /><br />Backstab your friends and steal their stuff. Grab the treasure and run.<br /><br />Admit it. You love it.<br /><br /><strong>Munchkin</strong> is the mega-hit card game about dungeon adventure . . . with none of that roleplaying stuff. You and your friends compete to kill monsters and grab magic items. And what magic items! Don the Horny Helmet and the Boots of Butt-Kicking. Wield the Staff of Napalm . . . or maybe the Chainsaw of Bloody Dismemberment. Start by slaughtering the Potted Plant and the Drooling Slime, and work your way up to the Plutonium Dragon . . .<br /><br />And it's illustrated by John Kovalic!<br /><br />Fast-playing and silly, Munchkin can reduce any roleplaying group to hysteria. And, while they're laughing, you can steal their stuff.</p>\r\n<p>The Deluxe Edition has a big gameboard to keep your cards in place, and twelve player standies with plastic stands that you move on the gameboard as you level up!</p>",
@@ -83,7 +27,20 @@
         "ownerId": "aae16546-dacb-497f-af58-1474af620c93",
         "gameAvailability": "AVAILABLE",
         "gameCondition": "Great",
-        "gameReviews": []
+        "gameReviews": [
+            {
+                "commentId": "b3c1e7c9-a4e6-4ee5-a40f-4f34aad0e3b0",
+                "commentName": "Steve Holt",
+                "commentText": "beep boop this is a comment",
+                "commentDate:": 1664062985985
+            },
+            {
+                "commentId": "43aa4674-f495-47d7-b13a-a38870409687",
+                "commentName": "Steve Holt",
+                "commentText": "beep boop this is a second comment",
+                "commentDate:": 1664063029231
+            }
+        ]
     },
     {
         "gameId": "95825cb7-61cc-4179-9e57-25dcb0f7fc7a",
@@ -99,5 +56,73 @@
         "gameAvailability": "RENTED",
         "gameCondition": "Ok",
         "gameReviews": []
+    },
+    {
+        "gameId": "cde706ae-fd19-4b0a-a512-9a048e709c80",
+        "gameName": "Catan",
+        "gameDescription": "description description description",
+        "gameDuration": "45-90",
+        "renterId": "cde706ae-fd19-4b0a-a512-9a048e709c80",
+        "gameMaxPlayers": "6",
+        "gameMinPlayers": "4",
+        "image": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1629324722072.jpg",
+        "gameCategory": "mavSOM8vjH",
+        "ownerId": "b4c83f5a-54ad-4610-8f43-c9d1cf8f4509",
+        "gameAvailability": "RENTED",
+        "gameCondition": "GOOD",
+        "gameReviews": [
+            {
+                "commentId": "78efe7e2-7759-48fb-8ecb-c9df52f0bf0f",
+                "commentName": "Matthew",
+                "commentText": "this is a pretty ok game",
+                "commentDate:": "1663538738"
+            },
+            {
+                "commentId": "d92ff3d1-864b-42ee-977c-fad47de2505a",
+                "commentName": "Steve",
+                "commentText": "this is a pretty a really long comment it goes something like this, it's very long beep boop beep boop it's really long",
+                "commentDate:": "1663538738"
+            },
+            {
+                "commentId": "c94c9759-0645-4031-a3b1-78078c99d4fc",
+                "commentName": "Steve Holt",
+                "commentText": "wow does this work?",
+                "commentDate:": 1664065477725
+            },
+            {
+                "commentId": "e94c2458-574c-49ec-87b7-8c19f58d78f1",
+                "commentName": "Steve Holt",
+                "commentText": "wow wowowowow",
+                "commentDate:": 1664065626561
+            }
+        ]
+    },
+    {
+        "gameId": "8f591d86-a413-40b3-a107-0f38e3710759",
+        "gameName": "Betrayal at House on the Hill",
+        "gameDescription": "<p>The creak of footsteps on the stairs, the smell of something foul and dead, the feel of something crawling down your back - this and more can be found in <strong>Betrayal at House on the Hill</strong>. This fun and suspenseful game is a new experience almost every time you play - you and your friends explore ''that creepy old place on the hill'' until enough mystic misadventures happen that one of the players turns on all of the others!</p>\r\n<p>Features multiple scenarios, a different lay-out with every game, and enough chills to freeze the heart of any horror fan.</p>\r\n<p>Betrayal at House on the Hill is a tile game that allows players to build their own haunted house room by room, tile by tile, creating a new thrilling game board every time. The game is designed for three to six people, each of whom plays one of six possible characters.</p>\r\n<p>Secretly, one of the characters betrays the rest of the party, and the innocent members of the party must defeat the traitor in their midst before it’s too late! Betrayal at House on the Hill will appeal to any game player who enjoys a fun, suspenseful, and strategic game.</p>\r\n<p>Betrayal at House on the Hill includes detailed game pieces, including character cards, pre-painted plastic figures, and special tokens, all of which help create a spooky atmosphere and streamline game play.</p>\r\n<p>An updated reprint of Betrayal at House on the Hill was released on October 5, 2010.</p>",
+        "gameDuration": "60-72",
+        "renterId": "",
+        "gameMinPlayers": 3,
+        "gameMaxPlayers": 6,
+        "image": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1595268779978",
+        "gameCategory": "mavSOM8vjH",
+        "ownerId": "b4c83f5a-54ad-4610-8f43-c9d1cf8f4509",
+        "gameAvailability": "AVAILABLE",
+        "gameCondition": "",
+        "gameReviews": [
+            {
+                "commentId": "6936a962-a571-499a-981c-8440ecc85071",
+                "commentName": "Steve Holt",
+                "commentText": "I am not Steve's Father",
+                "commentDate:": 1664066721428
+            },
+            {
+                "commentId": "d97cfbc9-3c2e-4b85-806f-4fa22cfbeeae",
+                "commentName": "Steve Holt",
+                "commentText": "STEVE STEVE STEVE",
+                "commentDate:": 1664067172194
+            }
+        ]
     }
 ]
