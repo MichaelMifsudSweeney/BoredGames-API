@@ -117,4 +117,5 @@ Huge shout out to [Board Game Atlas](https://github.com/matiassingers/awesome-re
 ## Next Steps
 - Add in walking distance with Google Distance Matrix API
 - MongoDB and 0Auth
+<<<<<<< HEAD
 - Social Features like chat and message boards
