@@ -3,6 +3,8 @@ const ownersModel = require("../models/ownersModel");
 const { v4: uuidv4 } = require("uuid");
 const Jabber = require('jabber');
 const jabber = new Jabber();
+
+//return the games list, filter by availability
 const gamesList = (_req, res) => {
     let gamesData = gamesModel.fetchGameData();
     let filteredGamesData = gamesData.filter((game) => game.gameAvailability === "AVAILABLE")
@@ -12,19 +14,20 @@ const gamesList = (_req, res) => {
     });
 };
 
+//get a single game based on the gameId
 const singleGame = (req, res) => {
     let gamesData = gamesModel.fetchGameData();
     let ownersData = ownersModel.fetchOwnersData();
     let selectedGame = gamesData.find((game) => game.gameId === req.params.id)
     let ownerProfile = ownersData.find((owner) => selectedGame.ownerId === owner.ownerId)
     let gameAndOwnerData = Object.assign(selectedGame, ownerProfile)
-
     res.status(200).json({
         status: "OK",
         results: gameAndOwnerData
     });
 };
 
+//reserve a game by updating fields in the json
 const reserveGame = (req, res) => {
     let gamesData = gamesModel.fetchGameData();
     let selectedGame = gamesData.find((game) => game.gameId === req.body.gameId)
@@ -38,22 +41,19 @@ const reserveGame = (req, res) => {
     });
 };
 
+//create a new game with the passed object
 const newGame = (req, res) => {
-    // let gamesData = gamesModel.fetchGameData();
     let newGameData = req.body
-    // console.log(newGameData)
     let gamesData = gamesModel.fetchGameData();
-    
     gamesData.push(newGameData)
-    // console.log(gamesData)
     gamesModel.writeGameData(gamesData)
-
     res.status(200).json({
         status: "OK",
         results: newGameData
     });
 };
 
+//create a new comment with the passed object and the params
 const newComment = (req, res) => {
     let gamesData = gamesModel.fetchGameData();
     let ownersData = ownersModel.fetchOwnersData();
@@ -65,8 +65,8 @@ const newComment = (req, res) => {
         "commentText": req.body.commentText,
         "commentDate:": Date.now()
     }
+
     objIndex = gamesData.findIndex((obj => obj.gameId === req.params.id));
-    
     gamesData[objIndex].gameReviews.push(newComment)
     gamesData[objIndex].gameAvailability = "AVAILABLE"
     gamesData[objIndex].renterId = ""
@@ -74,10 +74,9 @@ const newComment = (req, res) => {
     res.status(200).json({
         status: "OK"
     });
-
-    //need to set the availability and the renterId
 };
 
+//delete a game based on gameId
 const deleteGame = (req, res) => {
     let gamesData = gamesModel.fetchGameData();
     let updatedData = gamesData.filter(game => game.gameId !== req.params.id)
@@ -86,8 +85,6 @@ const deleteGame = (req, res) => {
         status: "OK"
     });
 };
-
-
 
 module.exports = {
     gamesList,

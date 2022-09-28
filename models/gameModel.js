@@ -1,11 +1,12 @@
 const fs = require("fs");
 
-//Read inventory data
+//fetch game data
 const fetchGameData = () => {
   let gameList = JSON.parse(fs.readFileSync("./data/games.json"));
   return gameList;
 };
 
+//write game data
 const writeGameData = (data) => {
     fs.writeFileSync("./data/games.json", JSON.stringify(data));
   };

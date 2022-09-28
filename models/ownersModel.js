@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-//Read inventory data
+//fetch owner data
 const fetchOwnersData = () => {
   let ownersList = JSON.parse(fs.readFileSync("./data/owners.json"));
   return ownersList;

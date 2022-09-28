@@ -3,27 +3,22 @@ const app = express();
 const cors = require("cors");
 const gamesRoute = require("./routes/games");
 const userRoute = require("./routes/user");
-// const warehouseRoute = require("./routes/warehouse");
 require("dotenv").config();
 const { PORT, BACKEND_URL } = process.env;
 
-// //Cors Middlewarenpx
+//Ability to use cors
 app.use(cors());
 
-// //Middleware to accces the body of the request
+//Middleware to accces the body of the request
 app.use(express.json());
 
-// //Inventory route
+//Games routes
 app.use("/games", gamesRoute);
 
+//user routes
 app.use("/user", userRoute);
 
-// //Warehouse route
-// app.use("/", warehouseRoute);
-
-
-
+//listen at port
 app.listen(PORT, () => {
 	console.log("Running on:" + PORT);
-	console.log("URL: " + BACKEND_URL);
 });
